@@ -14,27 +14,25 @@
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | SPC | LWR |   | RET |  DEL | ALT |
 //             | GUI | SPC | LWR |   | RET |  BSPC | ALT |
                         bindings = <
 &kp 0 &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp 0
 &kp 0 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp 0
 &kp 0 &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp 0
-           &kp LGUI &kp SPACE &mo 1   &kp RSHIFT &kp DEL &kp RALT
            &kp LGUI &kp SPACE &mo 1   &kp RSHIFT &kp BSPC &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
+// | TAB | BT2 | BT3 | BT4 | BT5 |   |     | LFT |  UP | RGT | RET |
+// |     |     |     |     |     |   |     |     | DWN |     |     |
+//             | GUI |     |     |   | SHFT| CMD |     |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &kp TAB      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp UP &kp RIGHT &kp BSPC &trans
+   &bt BT_CLR &kp TAB      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp UP &kp RIGHT &kp RET &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &kp DOWN   &trans &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &kp RSHIFT   &kp RALT
+                          	        &kp LGUI     &trans       &kp SPACE      &kp RSHIFT  &kp LGUI   &kp RALT
                         >;
                 };
                 raise_layer {
