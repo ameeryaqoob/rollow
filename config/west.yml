@@ -6,10 +6,12 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: ameeryaqoob
+      url-base: https://github.com/ameeryaqoob
   projects:
     - name: zmk
-      remote: infused-kim
-      revision: sofle
+      remote: ameeryaqoob
+      revision: master
       import: app/west.yml
   self:
     path: config
