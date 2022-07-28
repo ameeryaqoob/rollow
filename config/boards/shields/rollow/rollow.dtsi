@@ -8,7 +8,7 @@
 
 / {
 	chosen {
-		zephyr,display = &oled;
+		zephyr,display = &none;
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &five_column_transform;
 	};
