@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/ameeryaqoob
   projects:
     - name: zmk
-      remote: ameeryaqoob
-      revision: display/bongo-cat-widget
+      remote: infused-kim
+      revision: my-changes/split-encoder
       import: app/west.yml
   self:
     path: config
