@@ -11,9 +11,5 @@ manifest:
       remote: petejohanson
       revision: display/bongo-cat-widget
       import: app/west.yml
-    - name: zmk
-      remote: infused-kim
-      revision: my-changes/split-encoder
-      import: app/west.yml
   self:
     path: config
