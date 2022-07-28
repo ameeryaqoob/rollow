@@ -63,7 +63,7 @@
  * |------+------+------+------+------|                    |------+------+------+------+------|
  * | GRAVE|      |      |      |      |                    |      |      | DOWN |      |RETURN|
  * '----------------------------------/                    \----------------------------------'
- *           |  GUI |      | /       /                      \RSHIFT\  | RCMD |      |
+ *           |  GUI |  ESC | /       /                      \RSHIFT\  | RCMD |      |
  *           |      |      |/       /                        \      \ |      |      |
  *           '-------------''------'                          '------''-------------'
  * 
@@ -74,7 +74,7 @@
     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 
        &kp TAB &none &none &none &none    &none  &kp LEFT &kp UP   &kp RIGHT &kp APOS 
      &kp GRAVE &none &none &none &none    &none  &none    &kp DOWN &none     &kp RET 
-                  &kp LGUI &none &none    &kp RSHIFT &kp RCMD &none
+                &kp LGUI &kp ESC &none    &kp RSHIFT &kp RCMD &none
                             >;
 
                             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
