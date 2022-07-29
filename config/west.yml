@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/ameeryaqoob
   projects:
     - name: zmk
-      remote: infused-kim
-      revision: my-changes/split-encoder
+      remote: ameeryaqoob
+      revision: master
       import: app/west.yml
   self:
     path: config
