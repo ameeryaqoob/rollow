@@ -14,6 +14,14 @@
 
 / {
         behaviors {
+        ak: auxillary_keys {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUXILLARY_KEYS";
+            #binding-cells = <2>;
+            tapping_term_ms <200>
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+                };
         tp: tap_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_MODS";
