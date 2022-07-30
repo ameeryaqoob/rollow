@@ -48,7 +48,7 @@
     &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &mt MINUS P
     &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp APOS
     &mt LSHIFT Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH
-         &kp LCMD &mt LCMD SPACE &mo 1    &mt RCMD RET &kp BSPC &kp RET
+         &kp LCMD &tp LCMD SPACE &mo 1    &mt RCMD RET &kp BSPC &kp RET
                         >;
 
                         sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp RIGHT LEFT>;
