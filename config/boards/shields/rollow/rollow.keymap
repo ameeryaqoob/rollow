@@ -57,8 +57,8 @@
  *   Encoder Right: Left <-> Right
  */
                         bindings = <
-    &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &tp MINUS P
-    &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &tp SEMI APOS
+    &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &ak MINUS P
+    &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &mt SEMI APOS
     &mt LSHIFT Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH
          &kp LCMD &tp LCMD SPACE &mo 1    &mt RCMD RET &kp BSPC &kp RET
                         >;
@@ -75,7 +75,7 @@
  * |------+------+------+------+------|                    |------+------+------+------+------|
  * |GRV/RS|      |      |      |      |                    |      |      | DOWN |      |RET/LS|
  * '----------------------------------/                    \----------------------------------'
- *           |  GUI |  ESC | /       /                      \      \  | RCMD |      |
+ *           |  GUI |  ESC | /       /                      \ RCMD \  |      |      |
  *           |      |      |/       /                        \      \ |      |      |
  *           '-------------''------'                          '------''-------------'
  * 
@@ -86,7 +86,7 @@
     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5         &kp N6 &kp N7   &kp N8   &kp N9    &kp N0 
        &kp TAB &none &none &none &none         &none  &kp LEFT &kp UP   &kp RIGHT &kp SEMI 
  &mt LSHIFT GRAVE &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL 1    &none  &none    &kp DOWN &none &mt RSHIFT RET 
-                &kp LGUI &kp ESC &none         &none &kp RCMD &none
+                &kp LGUI &kp ESC &none         &kp RCMD &none &none
                             >;
 
                             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
