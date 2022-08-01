@@ -20,6 +20,8 @@
             #binding-cells = <2>;
             tapping_term_ms = <200>;
             flavor = "tap-preferred";
+            quick-tap-ms = <100>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
                 };
         tp: tap_mods {
@@ -57,7 +59,7 @@
                         bindings = <
     &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &tp MINUS P
     &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &tp SEMI APOS
-    &tp LSHIFT Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &tp RSHIFT FSLH
+    &mt LSHIFT Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &mt RSHIFT FSLH
          &kp LCMD &tp LCMD SPACE &mo 1    &mt RCMD RET &kp BSPC &kp RET
                         >;
 
