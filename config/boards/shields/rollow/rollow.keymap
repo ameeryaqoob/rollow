@@ -43,7 +43,7 @@
                 default_layer {
 /* Default
  * .----------------------------------.                    .----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  | P/-  |
+ * |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |  P   |
  * |------+------+------+------+----- |                    |------+------+------+------+------|
  * |   A  |   S  |   D  |   F  |   G  |                    |   H  |   J  |   K  |   L  |   '  |
  * |------+------+------+------+------|                    |------+------+------+------+------|
@@ -69,27 +69,27 @@
                 lower_layer {
 /* LOWER
  * .----------------------------------.                    .----------------------------------.
- * |   1  |  2   |  3   |  4   |  5   |                    |   6  |   7  |   8  |   9  |   0  |
+ * |   1  |  2   |  3   |  4   |  5   |                    |   6  |   7  |   8  |   9  | -/0  |
  * |------+------+------+------+------|                    |------+------+------+------+------|
  * |  TAB |      |      |      |      |                    |      | LEFT |  UP  | RIGHT|  ;   |
  * |------+------+------+------+------|                    |------+------+------+------+------|
  * |GRV/RS|      |      |      |      |                    |      |      | DOWN |      |RET/LS|
  * '----------------------------------/                    \----------------------------------'
- *           |  GUI |  ESC | /       /                      \ RCMD \  |      |      |
+ *           |  GUI |  ESC | /       /                      \ RCMD \  | BSPC |      |
  *           |      |      |/       /                        \      \ |      |      |
  *           '-------------''------'                          '------''-------------'
  * 
  *   Encoder Left: PG_UP <-> PG_DN
- *   Encoder Right: -
+ *   Encoder Right: Volume Down <-> Volume Up
  */
                         bindings = <
     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5         &kp N6 &kp N7   &kp N8   &kp N9    &ak MINUS N0 
        &kp TAB &none &none &none &none         &none  &kp LEFT &kp UP   &kp RIGHT &kp SEMI 
  &mt LSHIFT GRAVE &bt BT_CLR &bt BT_NXT &bt BT_PRV &bt BT_SEL 1    &none  &none    &kp DOWN &none &mt RSHIFT RET 
-                &kp LGUI &kp ESC &none         &kp RCMD &none &none
+                &kp LGUI &kp ESC &none         &kp RCMD &kp BSPC &none
                             >;
 
-                            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp PG_UP PG_DN>;
+           sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DOWN C_VOL_UP>;
                 };
 
                 raise_layer {
